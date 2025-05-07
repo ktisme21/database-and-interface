@@ -113,18 +113,6 @@ COMP1044_SRC/
 http://localhost/COMP1044_SRC/index.php
 ```
 
-## Submission Folder Structure
-
-```
-COMP1044_CW_GX/
-|-- ERD.pdf
-|-- COMP1044_database.sql
-|-- COMP1044_SRC.zip
-|-- video.mp4
-```
-
-*(Replace `Gx` with your actual group number)*
-
 ---
 
 ## Notes
