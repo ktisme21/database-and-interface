@@ -1,0 +1,915 @@
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+a{
+    color: #7c7fe4;
+    text-decoration: none;
+}
+a:hover{
+    color: #7c7fe4;
+}
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #7c7fe4;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color:  #7c7fe4;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+/* CSS for navbar section */
+body {
+    padding-top: 105px; /* Add top padding to the body to avoid content being hidden behind the fixed header */
+}
+
+.navbar{
+    position: fixed; /* Fix the header at the top of the viewport */
+    top: 0; /* Align the top edge of the header with the top of the viewport */
+    left: 0; /* Align the left edge of the header with the left of the viewport */
+    width: 100%; /* Ensure the header extends the full width of the viewport */
+    z-index: 1000; 
+    background-color: #FFF;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+}
+.logo img {
+    width: 100px;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+.list {
+    list-style: none;
+    display: flex;
+}
+.list li {
+    padding: 20px 20px;
+}
+.list li a {
+    color: #7c7fe4;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.user-list .list {
+    padding: 0;
+}
+.user-list .list li a {
+    padding: 10px 15px;
+    margin-left: 0px;
+    border-radius: 20px;
+    font-family: 'Pacifico' sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.user-list .list li .order-online {
+    background-color: #7c7fe4;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+.user-list .list li .order-online:hover {
+    background-color: #6658d3;
+}
+
+/* CSS for Drop down Section */
+
+/* Style the dropdown button to fit inside the navigation bar */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0; /* Ensures the dropdown has sharp corners */
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-radius: 0; /* Ensures the dropdown has sharp corners */
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #6658d3;
+    color: white;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 0; /* Ensures the dropdown has sharp corners */
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #6658d3;
+    color: white;
+
+}
+
+
+/* CSS for Food Search Section */
+.container-search{
+    width: 80%;
+    margin: 0px auto;
+    padding: 1%;
+}
+
+.food-search{
+    background-image: url(../images/fullofdonut.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+.main-content h1 {
+    color: #7c7fe4;
+    text-align: center;
+    font-size: 3.5em;
+    padding: 50px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.best-donuts-section {
+    position: relative;
+    width: 100%; /* Full width to use the entire page width */
+    margin: auto;
+    overflow: hidden; /* Hides the overflow */
+}
+
+/* Slider Advertisement Style */
+#slider {
+    display: flex;
+    min-width: 500%; /* 100% for each of the three slides */
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 100%; /* Each slide takes up 100% of the viewport width */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    font-size: 2em;
+    height: 500px; /* Set a fixed height or use a responsive height */
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #b6b7e879;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 1.0em;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.left-btn {
+    left: 0;
+}
+  
+.right-btn {
+    right: 0; 
+}
+
+/* Section: Best Donuts */
+.best-donuts-section h1 {
+    color: #4649a1;
+    text-align: center;
+    font-size: 3em;
+    padding: 50px 0;
+}
+  
+.best-donuts-section img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Top Flavors Style*/
+.top-flavors {
+    text-align: center; /* Align text to the right */
+    font-size: 2rem; /* Set font size */
+    font-weight: bold; /* Make it bold */
+    color: #7c7fe4; /* Set the text color */
+    margin-right: 20px; /* Add space on the right of the heading */
+    padding: 60px 0 0px 0;
+}
+
+.flavor {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    margin: 10px;
+    position: relative;
+}
+
+.flavor span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+/* Categories Sections in MainPage*/
+.container1 {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    max-width: 1200px; /* Or any maximum width you prefer */
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.box-4 {
+    width: 100%; 
+    margin-bottom: 20px; /* Adds space between stacked items */
+    position: relative; /* For positioning the caption text */
+    border-radius: 10px; /* Optional: if you want rounded corners */
+    overflow: hidden; /* Ensures content respects border-radius */
+    padding-left: 20px; /* Padding left maintained */
+    box-sizing: border-box; /* Include padding in the box's total width */
+    transition: transform 0.3s ease; /* Smooth transition for moving up */
+}
+
+.box-4:hover {
+    transform: translateY(-10px); /* Moves the box up by 10 pixels on hover */
+    /* Optionally, add a shadow or other effects here */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Example shadow */
+}
+
+.img-responsive.img-curve {
+    width: 100%; /* Image fills the width of the box */
+    display: block; /* Ensures there's no additional space around the image */
+    border-radius: 10px; /* Rounded corners for images, if desired */
+}
+
+.float-text {
+    font-size: 30px;
+    left: 10%;
+    position: absolute;
+    bottom: 0; /* Start at the bottom of the .box-4 */
+    width: 100%;
+    text-align: left;
+    color: white;
+    padding: 5px 0; /* Padding on top and bottom */
+    transform: translateY(100%); /* Initially hidden below the box */
+    transition: transform 0.5s ease; /* Smooth transition for the transform property */
+}
+
+.box-4:hover .float-text {
+    transform: translateY(0); /* Move the text up to its original position */
+}
+
+.float-text1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    color: white;/* Semi-transparent overlay for text readability */
+    padding: 15px 45px;
+}
+
+/* Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+/* CSS for Categories */
+.container3 {
+    max-width: 1000px; /* Adjust based on your design */
+    margin: auto; 
+    padding: 20px; /* Padding around the content */
+}
+
+.explore {
+    text-align: center; /* Centers the text */
+    font-size: 2rem; /* Set font size */
+    font-weight: bold; /* Make it bold */
+    color: #7c7fe4; /* Set the text color */
+    padding: 50px 0 0px 0; /* Padding at the top */
+}
+
+.categories .container3{
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-around; /* Space items evenly */
+    gap: 30px; /* Space between items */
+    max-width: 950px; /* Adjust based on your design */
+    margin: auto;
+    justify-content: flex-start;
+}
+
+.category-title {
+    width: 100%;
+    text-align: center; /* Centers the text */
+    margin-bottom: 20px; /* Adds space below the title */
+    font-size: 2em; /* Larger font size */
+    font-weight: bold; /* Makes the font bold */
+}
+
+/* Boxes in MenuPage */
+.box-3 {
+    width: calc(33.333% - 20px); /* Adjust the width for 3 items per row */
+    margin-bottom: 20px; /* Space between items */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds shadow for depth */
+    overflow: hidden; /* Ensures content fits */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.box-3:hover {
+    transform: translateY(-5px); /* Moves box up on hover */
+}
+
+.box-3 img {
+    max-width: 100%; /* Ensures image fits within the box */
+    display: block; /* Removes any extra space below the image */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Menu item styles */
+.menu-info {
+    padding: 20px; /* Adds padding for aesthetics */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.menu-name, .menu-description, .menu-price, .menu-quantity {
+    padding: 0 20px; /* Adds padding for better spacing */
+}
+
+.menu-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black; /* Color for menu item name */
+}
+
+.menu-description {
+    color: #666; /* Dark gray for description */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.menu-price {
+    font-weight: bold;
+    margin: 10px 0 20px; /* Space around the price */
+}
+
+.menu-quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns the button centrally if there's space */
+    margin-top: auto; 
+    padding: 0 20px; /* Left-right padding */
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 10px; /* Spacing above the button */
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    float: none;
+}
+
+/* Food Menu Section Styles */
+.food-menu1 {
+    background-color: #ffffff; 
+    padding: 50px 0 70px 0px; 
+}
+
+.food-menu2{
+    background-color: #d4d4e498;
+    padding: 40px 0 70px 0px; 
+}
+
+.container2 {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow the boxes to wrap onto the next line */
+    justify-content: center;
+    gap: 2%; /* Adjust the space between the boxes */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.food-menu1 h2 {
+    color: #7c7fe4; /* Dark color for the title for contrast */
+    margin-bottom: 30px; /* Spacing below the title */
+    width: 100%; /* Ensure the title takes full width */
+}
+
+.food-menu-box {
+    width: 43%; 
+    margin: 1%;
+    padding: 2%; 
+    float: left;
+    margin-top: 1%;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px; /* Space between food menu boxes */
+    background-color: white; /* Background color for each box */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure content fits within the borders */
+    height: 170px; /* Allow the height to grow as needed for content */
+    flex-direction: row;
+}
+
+.food-menu-img {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 160px; /* Fixed image width */
+    height: 160px; /* Fixed image height */
+    overflow: hidden; /* Hide overflow */
+}
+
+.food-menu-img img {
+    width: 100%; /* Ensure image covers the area */
+    height: 100%; /* Ensure image covers the area */
+    object-fit: cover; /* Cover the area without stretching the image */
+}
+
+.food-menu-desc {
+    flex-grow: 1; /* Allow the description area to grow */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    width: 80%;
+    float: left;
+    margin-left: 5%;
+}
+
+.food-quantity{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 5px;
+}
+
+.food-menu-desc h4,
+.food-menu-desc .food-price,
+.food-menu-desc .food-detail {
+    margin-bottom: 10px; /* Space between elements */
+}
+
+.food-menu-desc .food-price {
+    color: #7982e1; /* Price color for emphasis */
+    font-weight: bold; /* Make the price bold */
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+.text-center a {
+    display: inline-block; /* Necessary for margins to work */
+    background-color: #7982e1; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 20px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline from link */
+    font-weight: bold; /* Bold text for the button */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.text-center a:hover {
+    background-color: #232a76; /* Darker shade on hover for interaction feedback */
+}
+
+/* cart Button */
+#cart-btn {
+    background-color: rgb(255, 255, 255);
+    color: #7c7fe4;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    display: inline-flex; /* Use inline-flex for proper alignment with list items */
+    align-items: center;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#cart-panel {
+    position: fixed;
+    top: 5px;
+    right: -500px; /* Adjusted to match width */
+    width: 500px; /* Initial width */
+    height: 100%;
+    background-color: white;
+    transition: right 0.5s ease-in-out, width 0.5s ease; /* Added width to transition */
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    background-image: none;
+}
+
+.close-cart-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.close-cart-btn:hover {
+    color: #e74c3c;
+}
+
+/* Cart Panel */
+#cart-panel {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Adjust as necessary */
+    width: 400px; /* Adjust as necessary */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.70);
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+    transition: right 0.5s ease-in-out;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    justify-content: flex-start;
+}
+
+.container5 {
+    max-width: 400px; /* Set the max width for the container */
+    margin: auto; /* This will center the container */
+    background-color: #d7d7d7ce; /* Background color */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for a 3D effect */
+    border-radius: 10px; /* Rounded corners for the container */
+    overflow: hidden; /* Ensures that child elements do not overflow */
+    padding-bottom: 10px; /* Space at the bottom inside the container */
+}
+
+.cart-header {
+    background-color: #7c7fe4;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.cart-item {
+    background-color: #c8c9e4cf;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.item-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-price {
+    flex-grow: 1;
+}
+
+.quantity-input {
+    width: 50px;
+}
+
+.update-btn, .remove-btn {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-btn:hover, .remove-btn:hover {
+    background-color: #4ead5390; /* Green background on hover */
+    color: white;
+}
+
+.update-btn {
+    background-color: #5562ea;
+    color: white;
+}
+
+.remove-btn {
+    background-color: #e45353;
+    color: white;
+}
+
+.cart-footer {
+    margin-top: auto; /* Push footer to the bottom */
+    text-align: center;
+    padding: 30px;
+}
+
+#total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right;
+    color: rgb(0, 0, 0);
+}
+
+.checkout-btn, .continue-shopping-btn {
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-btn {
+    background-color: #454fbc;
+    color: white;
+}
+
+.continue-shopping-btn {
+    background-color: #9298d8;
+    color: white;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #7c7fe4;
+    color: #FFF;
+    padding: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #6366b2;
+}
+
+.footer-section h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+}
+
+.social-icons a{
+    font-size: 40px; /* Adjust size as needed */
+    width: 50px; /* Size of the clickable area */
+    height: 50px; /* Size of the clickable area */
+    line-height: 50px; /* Centers the font icon vertically */
+    text-align: center; /* Centers the font icon horizontally */
+    margin: 0 10px;
+    border-radius: 50%;
+    display: inline-block;
+    color: #2714b7;
+}
+
+.social-icons a:hover {
+    transform: rotate(15deg);
+    transition: transform 0.3s ease;
+    background-color: #6658d3;
+}
+
+.footer-section form {
+    margin-top: 15px;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px 15px;
+    border: none;
+    margin-bottom: 15px;
+    width: 70%;
+}
+
+.footer-section button {
+    margin-left: 3px;
+    padding: 10px 15px;
+    background-color: #7c7fe4;
+    border: 2px dashed #6366b2;
+    border-radius: 20px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.footer-section button:hover {
+    background-color: #6366b2;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-bottom: -30px;
+    padding: 5px 20px;
+    background-color: #7c7fe4;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+.footer-bottom .creator{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-bottom .creator:hover {
+    text-decoration: underline;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+/* CSS for Mobile Size or Smaller Screen */
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-3 {
+        width: calc(50% - 20px); /* Adjust width for 2 items per row */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .food-menu-box {
+        flex-basis: 100%; /* Full width for a single column layout */
+        margin-bottom: 20px; /* Space between items */
+    }
+}
+

@@ -1,0 +1,87 @@
+/* Main Content */
+.contact-container {
+    width: 100%;
+    padding: 80px 0px;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact-info p {
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact-form form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;/* Add space between the info and form */
+    width: 100%;
+    max-width: 500px;/* Limit the width of the form */
+    margin-left: auto;/* Center the form */
+    margin-right: auto;/* Center the form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    box-sizing: border-box;/* This ensures padding is included in total width and height */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Submit Button */
+button {
+    background-color: #7c7fe4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #6658d3;
+}
+
+/* Adjust breakpoints as necessary for responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        max-width: none;
+    }
+}
